@@ -29,7 +29,11 @@ public class Book
         this.genre = gnr;
         this.published = publish;
         this.pages = pgs;
-        this.image = img;
+        if (img == null) {
+            this.image = DEFAULTIMG;
+        } else {
+            this.image = img;
+        }
     }
     
     /**

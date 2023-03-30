@@ -33,5 +33,13 @@ public class Books
         this.currBookId = 3; 
         
     }
+    
+    /**
+     * add book to hashmap 
+     */
+    public void addBook(String ttl, String auth, String gnr, int publish, int pgs, String img) {
+        currBookId++; // increment book id 
+        booksMap.put(currBookId, new Book(ttl, auth, gnr, publish, pgs, img));
+    }
 
 }
