@@ -53,4 +53,15 @@ public class GUI
         books.addBook(ttl, auth, gnr, publish, pgs, img);
     }
     
+    /**
+     * 
+     */
+    public void findBook() {
+        String bookTitle = UI.askString("search title: ");
+        if (books.findBook(bookTitle)) {
+            UI.println("Found book!");
+        } else {
+            UI.println("Book not found!");
+        }
+    } 
 }

@@ -44,4 +44,11 @@ public class Book
         // initialise instance variables       
         this(ttl, auth, gnr, publish, pgs, DEFAULTIMG);
     }
+    
+    /**
+     * getter for title
+     */
+    public String getTitle() {
+        return this.title;
+    }
 }
